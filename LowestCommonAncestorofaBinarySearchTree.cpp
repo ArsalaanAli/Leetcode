@@ -43,6 +43,7 @@ public:
         if(p->val < root->val && q->val < root->val){
             return lowestCommonAncestor(root->left, p, q);
         }
+        //if p and q are both to right
         if(p->val > root->val && q->val > root->val){
             return lowestCommonAncestor(root->right, p, q);
         }
